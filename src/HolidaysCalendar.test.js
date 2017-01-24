@@ -15,20 +15,19 @@ describe('Holidays Calendar ...', function()
 
     });
 
-
     describe('Year', function()
     {
-        it('should bring back all months and total number of holidays for a given year', function()
+        it('should bring back all months and total number of holidays for a given year (2020, 12 holidays)', function()
         {
             var result = calendar.Year(2020);
             expect(result).to.be.a('object');
             expect(result.total).to.be.a('number');
-            expect(result.total).to.be.equal(11);
+            expect(result.total).to.be.equal(12);
             expect(result.months).to.be.a('array');
             expect(result.months.indexOf(1)).to.be.not.equal(-1);
         });
 
-        it('should return false for non existing reference in the calendar', function()
+        it('should retucdrn false for non existing reference in the calendar', function()
         {
             var result = calendar.Year(1950);
             expect(result).to.be.a('boolean');

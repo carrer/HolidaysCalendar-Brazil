@@ -1,6 +1,6 @@
 {
   "name": "holidays-calendar-brazil",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Library for retrieving the Brazilian Holidays' calendar.",
   "main": "src/HolidaysCalendar-brazil.js",
   "scripts": {
@@ -21,6 +21,6 @@
     "mocha": "^3.2.0"
   },
   "dependencies": {
-    "holidays-calendar": "^1.0.0"
+    "holidays-calendar": "^1.0"
   }
 }
