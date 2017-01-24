@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="../../node_modules/holidays-calendar/dist/HolidaysCalendar.js"></script>
+        <script src="HolidaysCalendar-brazil.js" charset="utf-8"></script>
+        <script>
+        function process()
+        {
+            var LB = '\r\n',
+                monthsNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+            function echo(text, lineBreak)
+            {
+                if (typeof lineBreak == 'undefined')
+                    lineBreak = true;
+                document.getElementById('out').innerHTML += text + ( lineBreak ? LB : '');
+            }
+
+            echo('01/01/2020 is '+HolidaysCalendar.Day(2020, 1, 1)+LB);
+
+            echo('All holidays in 2035: ');
+            var data = HolidaysCalendar.Year(2035);
+            for(var month in data.months)
+            {
+                var month = data.months[month];
+                echo(monthsNames[month-1]+':'+LB+'\t\t', false);
+                var days = HolidaysCalendar.Month(2035, month);
+                for(var day in days.days)
+                {
+                    day = days.days[day];
+                    echo(day+': '+HolidaysCalendar.Day(2035, month, day)+'\t', false);
+                }
+                echo('');
+            }
+
+            echo('');
+        }
+        </script>
+    </head>
+    <body onload="process()">
+        <pre id="out" />
+    </body>
+</html>
