@@ -1,0 +1,26 @@
+{
+  "name": "holidays-calendar-brazil",
+  "version": "1.0.0",
+  "description": "Library for retrieving the Brazilian Holidays' calendar.",
+  "main": "src/HolidaysCalendar-brazil.js",
+  "scripts": {
+    "test": "mocha src/HolidaysCalendar.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carrer/HolidaysCalendar-Brazil.git"
+  },
+  "author": "Walter Carrer Neto <carrer@gmail.com> (http://www.carr3r.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carrer/HolidaysCalendar-Brazil/issues"
+  },
+  "homepage": "https://github.com/carrer/HolidaysCalendar-Brazil#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "holidays-calendar": "^1.0.0"
+  }
+}
