@@ -50,7 +50,7 @@ Retrieves information about holidays in a specific month.
 
 **month**: integer, required. Month reference (January=1).
 
-***return***: Mixed. *Object* with structure: ```{total: integer, days: array of integer}``` when there are holidays within that year; *False* when there are no holidays in the given month.
+***return***: Mixed. *Object* with structure: ```{total: integer, days: array of integer}``` when there are holidays within that month; *False* when there are no holidays in the given month.
 
 #### Example
 
